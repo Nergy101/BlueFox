@@ -1,4 +1,4 @@
-import requests
+import requests, json
 
 G_API_KEY = "xMqp15q3WXzVL1q0T8k6JMRQmD6SETe5"
 W_API_KEY = "3e7479392874b48638d0847329f31fad"
@@ -42,3 +42,7 @@ print(f"Weather of today at {city_name}:")
 print(f"Curently there is a {weather['weather'][0]['description']}")
 
 # api.openweathermap.org/data/2.5/forecast?id={city ID}
+
+with open('settings.json') as json_data_file:
+    config = json.load(json_data_file)
+    print(config["Settings"]["App"][0]["AppName"])
