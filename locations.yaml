@@ -1,3 +1,0 @@
-thuis: !!python/object:location.Location {display_name: '202, Tweede Westerparklaan,
-    Utrecht, Nederland, 3544VR, Nederland', house_number: '202', lat: 52.0906529,
-  lon: 5.0447691, name: thuis}
