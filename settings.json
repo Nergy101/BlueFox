@@ -1,13 +1,14 @@
 {
-  "Settings":
-    {
-      "App": [
-        {
-          "AppName" : "RedFoxApp"
-        },
-        {
-          "AppAuthor": "Nergy101"
-        }
-      ]
-    }
+  "Settings": {
+    "App":
+      {
+        "AppName": "RedFoxApp",
+        "AppAuthor": "Nergy101"
+      },
+    "Api":
+      {
+        "WeatherApiKey": "3e7479392874b48638d0847329f31fad",
+        "GiphyApiKey": "xMqp15q3WXzVL1q0T8k6JMRQmD6SETe5"
+      }
+  }
 }
