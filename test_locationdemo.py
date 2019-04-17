@@ -1,6 +1,6 @@
 from geopy.geocoders import Nominatim
 from ruamel import yaml
-from geo.location import Location
+from geo.Location import Location
 
 geolocator = Nominatim(user_agent="locationTryOut")
 home_location = geolocator.geocode("Tweede Westerparklaan 202")

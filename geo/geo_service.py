@@ -1,6 +1,6 @@
 from geopy.geocoders import Nominatim
 from geopy.distance import distance
-from geo.location import Location
+from geo.Location import Location
 from termcolor import colored
 
 import sys

@@ -31,13 +31,13 @@ geo_service.save_all_locations()
 a = geo_service.get_location("vriendin")
 b = geo_service.get_location("werk")
 #
-print(f"Van {a.name} naar {b.name} is {round(get_distance(a.coords, b.coords).kilometers, 2)} km")
+print(f"Van {a.name} naar {b.name} is {round(get_distance((a.lat, a.lon), (b.lat, b.lon)).kilometers, 2)} km")
 #
 # print('Locations')
 # for l in geo_service.get_all_locations():
 #     print("- "+l.name+": "+l.display_name)
 
-response = requests.get(f"https://api.openweathermap.org/data/2.5/forecast/daily?lat={a.coords[0]}&lon={a.coords[1]}&cnt={1}&APPID={W_API_KEY}")
+response = requests.get(f"https://api.openweathermap.org/data/2.5/forecast/daily?lat={a.lat}&lon={a.lon}&cnt={1}&APPID={W_API_KEY}")
 weather = response.json()
 degrees = (weather['list'][0]['deg'] - 32)/1.8
 print(f"Weather of today at {weather['city']['name']}:")
